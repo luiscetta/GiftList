@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer-container">
             <div className="footer-content">
-                <p className="text">Created by <span><a target="_blank" rel="noreferrer" href="https://hackzapp.com/about">Hackz Team</a></span></p>
+                <p className="text">Created by <span><a className="hackz-link" target="_blank" rel="noreferrer" href="https://hackzapp.com/about">Hackz Team</a></span></p>
             </div>
         </div>
     );

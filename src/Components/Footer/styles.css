@@ -22,11 +22,11 @@ span {
     font-weight: bold;
 }
 
-a {
+.hackz-link {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover {
+.hackz-link:hover {
     text-decoration: underline;
 }
