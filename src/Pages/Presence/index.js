@@ -1,9 +1,11 @@
 import React from 'react';
 
+import InputGroup from '../../Components/PresenceInput';
+
 export default function Presence() {
     return (
-        <div className="container">
-            <h2>Presence Confirmation</h2>
-        </div>
+        <>
+            <InputGroup/>
+        </>
     )
 }

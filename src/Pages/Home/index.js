@@ -13,7 +13,7 @@ export default function Home() {
 
                 <main className="home-text">
                     <p className="home-description">
-                        Olá, queridos! Esse site é para passarmos as informações sobre horário e local do evento <span>(horário e local na página de confirmação de presença)</span>.
+                        Olá, queridos! Esse site é para passarmos as informações sobre horário e <span><a className="link-list" href="/Address">local do evento </a></span>.
                     </p>
                     <p className="home-description">
                         Vocês também devem confirmar sua presença até o dia <span>00/00/2022</span> pra termos noção de quantas pessoas irão.
