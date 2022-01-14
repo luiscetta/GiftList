@@ -1,0 +1,69 @@
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content {
+    width: 60%;
+    margin: 3.5rem auto 0;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: var(--offwhite);
+    padding: 2rem;
+    border-radius: 3rem 1rem 5rem 6rem;
+    box-shadow: 0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
+}
+
+.groom {
+    margin: auto;
+    text-align: center;
+}
+
+.hr {
+    color: rgba(106, 116, 103, 0.466);
+    height: 15rem;
+    margin: auto;
+}
+
+.bride {
+    margin: auto;
+    text-align: center;
+}
+
+.contact-text {
+    margin: auto;
+    width: 78%;
+    padding: .3rem 0;
+
+    color: var(--greentext);
+}
+
+.whatsapp {
+    text-decoration: none;
+    color: var(--greentext);
+    font-weight: bold;
+
+    margin-left: .22rem;
+}
+
+.whatsapp:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
+}
+
+.contact-title {
+    text-align: center;
+    color: var(--greentext);
+    font-size: 1rem;
+    padding: 0;
+    margin-top: -.1rem;
+    letter-spacing: .2rem;
+}
+
+.groom-img,
+.bride-img {
+    width: 10rem;
+    clip-path: circle(50% at 50% 50%);
+}
