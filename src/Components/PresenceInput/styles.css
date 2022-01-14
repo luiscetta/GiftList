@@ -2,7 +2,6 @@
 
 .input-container {
     width: 100%;
-    height: 100%;
 }
 
 .input-content {
@@ -63,20 +62,14 @@
     color: var(--greentext);
 }
 
-.toolkit {
-    margin-top: 1rem;
-    color: var(--offwhite);
-    font-size: 0.7rem;
-}
-
 .btn-add-span {
-    padding: 0 .2rem 0;
+    padding: 0 0.2rem 0;
     border: none;
     border-radius: 0.3rem;
 
     background-color: var(--offwhite);
     color: var(--greentext);
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 
 .box {
@@ -129,6 +122,12 @@
     border: 1px solid var(--offwhite);
 }
 
+.toolkit {
+    margin-top: 1rem;
+    color: var(--offwhite);
+    font-size: 0.7rem;
+}
+
 .confirm-btn {
     margin: 1.3rem 0;
     width: 8rem;
@@ -144,4 +143,66 @@
     font-weight: bold;
     background-color: var(--offwhite);
     transition: all 0.3s ease-in;
+}
+
+/* Media __________________________________________________________________________________*/
+@media screen and (max-width: 428px) {
+    .input-content {
+        width: 85%;
+    }
+
+    .input-title {
+        font-size: 2.8rem;
+    }
+
+    .label,
+    .box label {
+        font-size: 0.85rem;
+    }
+
+    .add-form {
+        width: 1.8rem;
+    }
+}
+
+@media screen and (width: 360px) {
+    .input-content {
+        width: 90%;
+    }
+
+    .input-title {
+        font-size: 2.8rem;
+    }
+
+    .label,
+    .box label {
+        font-size: 0.85rem;
+    }
+
+    .add-form {
+        width: 1.8rem;
+    }
+}
+
+@media screen and (width: 320px) {
+    .input-content {
+        width: 90%;
+    }
+
+    .input-title {
+        font-size: 2.5rem;
+    }
+
+    .label,
+    .box label {
+        font-size: 0.83rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .add-form {
+        width: 1.8rem;
+    }
 }

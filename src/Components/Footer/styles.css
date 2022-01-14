@@ -1,6 +1,7 @@
 .footer-container {
     width: 100%;
     bottom: 0;
+    vertical-align: bottom;
     position: fixed;
 }
 
