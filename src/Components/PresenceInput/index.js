@@ -9,17 +9,15 @@ export default function InputGroup() {
                     <h3 className="input-title">Confirme sua presença:</h3>
 
                     <form id="form1" className="input-group">
-                        <div className="label-content">
-                            <label className="label" htmlFor="name">Digite o seu nome:</label>
-                        </div>
+                        <label className="label" htmlFor="name">Digite o seu nome</label>
                         <div className="section">
-                            <input type="text" id="name" name="name" className="input-name" autoFocus required />
-                            <button onClick={addForm()} type="button" id="add1" className="add-form">+</button>
+                            <input type="text" id="name" name="name" className="input-name" autoFocus required autoComplete='off' />
                         </div>
-
                         <div id="box" className="box"></div>
-                        <span className="toolkit">Clique no ' + ' ao lado para adicionar mais nomes caso precise!</span>
+                        <button onClick={addForm()} type="button" id="add1" className="add-form">+</button>
+                        <span className="toolkit">Clique no <span className="btn-add-span">+</span> acima para adicionar nomes de outras pessoas!</span>
                     </form>
+
                     <button id="confirm1" className="confirm-btn" type="submit" form="form1">Confirmar</button>
                 </div>
             </div>

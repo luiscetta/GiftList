@@ -5,9 +5,15 @@ export default function AddForm() {
 
         let count = 1;
 
+        btn_add.addEventListener('click', () => {
+            count++;
+            createLabel();
+            createInput();
+        });
+
         function createLabel() {
             let element = document.createElement('label');
-            element.setAttribute('htmlFor', 'name_' + count);
+            element.setAttribute('for', 'name_' + count);
             element.textContent = 'Digite o nome da outra pessoa';
 
             box.appendChild(element);
@@ -18,15 +24,12 @@ export default function AddForm() {
             element.setAttribute('type', 'text');
             element.setAttribute('id', 'name_' + count);
             element.setAttribute('name', 'name_' + count);
+            element.setAttribute('required', 'true');
+            element.setAttribute('autoComplete', 'off');
 
             box.appendChild(element);
         }
 
-        btn_add.addEventListener('click', () => {
-            count++;
-            createLabel();
-            createInput();
-        });
     }
 
 }
