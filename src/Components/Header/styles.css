@@ -15,12 +15,16 @@
 }
 
 .nav-link {
+    width: auto;
+    padding: .2rem .5rem;
     font-size: 1rem;
     text-decoration: none;
     color: var(--greentext);
 }
 
 .nav-link:hover {
-    font-weight: bold;
-    transition: all 0.2s ease-in;
+    background-color: var(--greentext);
+    border-radius: .5rem .1rem .5rem .1rem;
+    color: var(--offwhite);
+    transition: all 0.3s ease-in-out;
 }
