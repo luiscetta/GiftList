@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap");
 
 .home-container {
     width: 100%;
@@ -13,14 +13,14 @@
     margin-top: 4rem;
     background-color: var(--offwhite);
     padding-bottom: 1.5rem;
-    padding-top: .1rem;
+    padding-top: 0.1rem;
 
     border-radius: 85rem 25rem 85rem 55rem;
-    box-shadow: -.6rem .2rem .3rem rgba(106, 116, 103, 0.678);
+    box-shadow: -0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
 }
 
 .home-title {
-    font-family: 'The Nautigal', cursive;
+    font-family: "The Nautigal", cursive;
     font-size: 2.3rem;
     text-align: center;
     color: var(--greentext);
@@ -51,10 +51,51 @@
     margin: auto;
     width: 35%;
     background-color: var(--greentext);
-    
-    border-radius: .3rem 0 .3rem 0;
+
+    border-radius: 0.3rem 0 0.3rem 0;
 }
 
 .heart-icon {
     color: rgb(243, 180, 224);
 }
+
+/* MEDIA_________________________________________________________________________________________  */
+@media screen and (max-width: 428px) {
+    .home-content {
+        width: 92%;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-text {
+        width: 63%;
+        font-size: 0.9rem;
+    }
+
+    .footer-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (width: 320px) {
+    .home-content {
+        width: 92%;
+    }
+
+    .home-title {
+        font-size: 1.7rem;
+    }
+
+    .home-text {
+        width: 68%;
+        font-size: 0.82rem;
+    }
+
+    .footer-description {
+        font-size: 0.7rem;
+    }
+}
+
+
