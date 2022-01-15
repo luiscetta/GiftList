@@ -19,7 +19,7 @@ export default function Home() {
                         Vocês também devem confirmar sua presença até o dia <span>00/00/2022</span> pra termos noção de quantas pessoas irão.
                     </p>
                     <p className="home-description">
-                        E por último, não menos importante, aqui contém nossa <a className="link-list" href="/GiftList" >Lista do Chá de Panela</a>. Para nos presentear basta clicar no item, selecionar e pronto.
+                        E por último, não menos importante, aqui contém nossa <a className="link-list" href="/gift-list" >Lista do Chá de Panela</a>. Para nos presentear basta clicar no item, selecionar e pronto.
                     </p>
 
                     <p className="home-description">

@@ -12,10 +12,10 @@ export const Routes = () => (
     <Router>
         <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/GiftList" component={GiftList} />
-                <Route path="/Presence" component={Presence} />
-                <Route path="/Contact" component={Contact} />
-                <Route path="/Address" component={Address} />
+                <Route path="/gift-list" component={GiftList} />
+                <Route path="/presence" component={Presence} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/address" component={Address} />
         </Switch>
     </Router>
 );

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap");
+
+.gift-container {
+    width: 100%;
+}
+
+.gift-content {
+    width: 50%;
+    height: 25rem;
+    margin: 1.5rem auto 0;
+    padding: 0.1rem;
+    background-color: var(--offwhite);
+    box-shadow: -0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
+    border-radius: 5rem;
+}
+
+.scroll-container {
+    width: 90%;
+    height: 20rem;
+    margin: 2.3rem auto 0;
+    text-align: center;
+    background-color: #474d46;
+    border-radius: 0.5rem;
+    overflow: auto;
+}
+
+.scroll-content {
+    margin: 1rem auto;
+    text-align: left;
+    width: 95%;
+    display: flex;
+    gap: 0.5rem;
+    color: var(--offwhite);
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--greentext);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.scroll-content:hover {
+    background-color: var(--greentext);
+}
+
+.scroll-content label,
+.scroll-content input {
+    cursor: pointer;
+}
