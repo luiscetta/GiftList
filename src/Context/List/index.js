@@ -377,16 +377,16 @@ const ListItems = () => {
                 <label htmlFor="check91">Travessas/Refratários</label>
             </div>
             <div className="scroll-content">
-                <input id="check91" type="checkbox" className="check-input" />
-                <label htmlFor="check91">Vassoura Piassava e de Pelo</label>
+                <input id="check92" type="checkbox" className="check-input" />
+                <label htmlFor="check92">Vassoura Piassava e de Pelo</label>
             </div>
             <div className="scroll-content">
-                <input id="check91" type="checkbox" className="check-input" />
-                <label htmlFor="check91">Rodo</label>
+                <input id="check93" type="checkbox" className="check-input" />
+                <label htmlFor="check93">Rodo</label>
             </div>
             <div className="scroll-content">
-                <input id="check91" type="checkbox" className="check-input" />
-                <label htmlFor="check91">Pá de Lixo</label>
+                <input id="check94" type="checkbox" className="check-input" />
+                <label htmlFor="check94">Pá de Lixo</label>
             </div>
         </div>
     );

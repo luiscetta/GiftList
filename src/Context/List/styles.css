@@ -41,3 +41,20 @@
 .check-input {
     accent-color: rgb(243, 180, 224);
 }
+
+/* MEDIA ___________________________________________________________________ */
+@media screen and (max-width: 428px) {
+    .scroll-container {
+        width: 90%;
+        height: 25rem;
+        margin-top: 2rem;
+    }
+
+    .gift-title {
+        font-size: 2.3rem;
+    }
+
+    .scroll-content {
+        font-size: 1rem;
+    }
+}

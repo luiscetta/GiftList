@@ -9,14 +9,8 @@
     margin: 1.5rem auto;
 
     background-color: var(--greentext);
-    box-shadow: -0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
+    box-shadow: -0.6rem 0.2rem 0.3rem #6a7467ad;
     border-radius: 2rem 3rem 5rem 1rem;
-}
-
-.donates-title {
-    font-family: "The Nautigal", cursive;
-    color: var(--offwhite);
-    font-size: 3.1rem;
 }
 
 .donates-container {
@@ -24,6 +18,12 @@
     text-align: center;
     height: 25rem;
     width: 90%;
+}
+
+.donates-title {
+    font-family: "The Nautigal", cursive;
+    color: var(--offwhite);
+    font-size: 3.1rem;
 }
 
 .donates-content {
@@ -38,11 +38,61 @@
 .donates-keys {
     margin: auto;
     width: 12rem;
-    background-color: #474d46;
+    background-image: radial-gradient(
+        circle,
+        #474d46,
+        #4d544c,
+        #545b52,
+        #5a6359,
+        #616a5f,
+        #697367,
+        #727c6f,
+        #7a8577,
+        #879283,
+        #94a090,
+        #a1ad9d,
+        #aebbaa
+    );
+    border-radius: 0.3rem;
+    padding: 0.3rem;
 }
 
 .donates-keys p {
     color: var(--offwhite);
     font-weight: bold;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
+}
+
+/* MEDIA ______________________________________________________________ */
+@media screen and (width: 810px) {
+    .gift-container {
+        width: 85%;
+    }
+}
+
+@media screen and (width: 800px) {
+    .gift-container {
+        width: 85%;
+    }
+}
+
+@media screen and (width: 768px) {
+    .gift-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .gift-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 93%;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .donates-container {
+        height: 20rem;
+    }
 }
