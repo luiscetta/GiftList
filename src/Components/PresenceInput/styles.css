@@ -39,7 +39,7 @@
     justify-content: center;
 }
 
-label {
+.label {
     margin: 1rem auto 0;
     display: flex;
     width: 89%;
@@ -145,7 +145,7 @@ label {
         font-size: 2.8rem;
     }
 
-    label {
+    .label {
         font-size: 0.85rem;
         width: 99%;
     }
@@ -164,7 +164,7 @@ label {
         font-size: 2.8rem;
     }
 
-    label {
+    .label {
         font-size: 0.85rem;
     }
 
@@ -182,7 +182,7 @@ label {
         font-size: 2.5rem;
     }
 
-    label {
+    .label {
         font-size: 0.83rem;
     }
 

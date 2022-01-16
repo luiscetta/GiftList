@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap");
+
+
+.add-container {
+    width: 100%;
+}
+
+.add-content {
+    width: 70%;
+    margin: auto;
+}
+
+.add-title {
+    text-align: center;
+    font-family: "The Nautigal", cursive;
+    font-size: 3.1rem;
+    color: var(--greentext);
+}
+
+.add-section {
+    width: 50%;
+    margin: auto;
+    padding: 1rem 0;
+    text-align: center;
+
+    background-color: var(--offwhite);
+    border-radius: 1rem;
+    box-shadow: 0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
+}
+
+.section-title {
+    color: var(--offwhite);
+    background-color: var(--greentext);
+
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.section-paragraph {
+    margin: auto;
+    width: 60%;
+    color: var(--greentext);
+}
+
+/* MEDIA _____________________________________________________________________________  */
+@media screen and (max-width: 428px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 90%;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: .9rem;
+        width: 80%;
+    }
+}
+
+@media screen and (width: 320px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: .8rem;
+        width: 80%;
+    }
+}
