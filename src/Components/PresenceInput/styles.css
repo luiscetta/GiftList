@@ -39,13 +39,17 @@
     justify-content: center;
 }
 
-.label {
+label {
+    margin: 1rem auto 0;
+    display: flex;
+    width: 89%;
+    align-items: left;
+
     font-size: 0.9rem;
     color: var(--greentext);
     background-color: var(--offwhite);
-    border-radius: 0.1rem 0.2rem 0.1rem 0.2rem;
+    border-radius: .3rem .3rem 0 0;
     font-weight: bold;
-    margin-bottom: .1rem;
 }
 
 .section {
@@ -74,27 +78,11 @@
 }
 
 .box {
-    width: 80%;
+    width: 100%;
     justify-self: left;
     display: inherit;
     flex-direction: inherit;
     margin: 0.7rem 0 0;
-}
-
-.box label {
-    margin: 1rem auto 0;
-    display: flex;
-    width: 13rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: .1rem;
-
-    font-size: 0.9rem;
-    color: var(--greentext);
-    background-color: var(--offwhite);
-    border-radius: 0.1rem 0.2rem 0.1rem 0.2rem;
-    font-weight: bold;
 }
 
 .box input {
@@ -157,9 +145,9 @@
         font-size: 2.8rem;
     }
 
-    .label,
-    .box label {
+    label {
         font-size: 0.85rem;
+        width: 99%;
     }
 
     .add-form {
@@ -176,8 +164,7 @@
         font-size: 2.8rem;
     }
 
-    .label,
-    .box label {
+    label {
         font-size: 0.85rem;
     }
 
@@ -195,8 +182,7 @@
         font-size: 2.5rem;
     }
 
-    .label,
-    .box label {
+    label {
         font-size: 0.83rem;
     }
 

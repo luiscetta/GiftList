@@ -47,10 +47,10 @@
 }
 
 .footer-description {
-    color: #fff;
+    color: var(--greentext);
+    font-weight: bold;
     margin: auto;
-    width: 35%;
-    background-color: var(--greentext);
+    width: 50%;
 
     border-radius: 0.3rem 0 0.3rem 0;
 }
@@ -63,6 +63,7 @@
 @media screen and (max-width: 428px) {
     .home-content {
         width: 92%;
+        border-radius: 70rem 25rem 65rem 55rem;
     }
 
     .home-title {
@@ -71,11 +72,14 @@
 
     .home-text {
         width: 63%;
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .footer-description {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        width: 50%;
+        text-align: center;
+        color: var(--greentext);
     }
 }
 
@@ -90,11 +94,11 @@
 
     .home-text {
         width: 68%;
-        font-size: 0.82rem;
+        font-size: 0.85rem;
     }
 
     .footer-description {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
     }
 }
 

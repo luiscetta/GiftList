@@ -21,6 +21,14 @@
     clip-path: circle(50% at 50% 50%);
 }
 
+.contact-title {
+    text-align: center;
+    color: var(--greentext);
+    font-size: 1rem;
+    padding: 0;
+    letter-spacing: 0.2rem;
+}
+
 .groom {
     margin: auto;
     text-align: center;
@@ -58,14 +66,6 @@
     transition: all 0.2s ease-in;
 }
 
-.contact-title {
-    text-align: center;
-    color: var(--greentext);
-    font-size: 1rem;
-    padding: 0;
-    margin-top: -0.1rem;
-    letter-spacing: 0.2rem;
-}
 
 /* MEDIA ________________________________________________________________________*/
 @media screen and (max-width: 428px) {
