@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap");
 
-
 .add-container {
     width: 100%;
-}
-
-.add-content {
-    width: 70%;
-    margin: auto;
 }
 
 .add-title {
@@ -17,15 +11,36 @@
     color: var(--greentext);
 }
 
-.add-section {
-    width: 50%;
+.add-content {
+    width: 100%;
     margin: auto;
-    padding: 1rem 0;
+}
+
+.add-section {
+    width: 60%;
+    height: 25rem;
+    margin: auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 
     background-color: var(--offwhite);
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: 0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
+}
+
+iframe {
+    width: 25rem;
+    height: 20rem;
+    margin: auto;
+    border: .3rem solid var(--greentext);
+    border-radius: 0 0 .8rem 0;
+}
+
+.add-text {
+    width: 100%;
+    margin-top: 1.02rem;
 }
 
 .section-title {
@@ -43,7 +58,53 @@
 }
 
 /* MEDIA _____________________________________________________________________________  */
-@media screen and (max-width: 428px) {
+@media screen and (width: 1440px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 56%;
+    }
+
+    .add-text {
+        margin-top: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+
+@media screen and (width: 1024px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 79%;
+    }
+
+    .add-text {
+        margin-top: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+
+@media screen and (width: 810px) {
     .add-title {
         font-size: 2.5rem;
     }
@@ -52,12 +113,89 @@
         width: 90%;
     }
 
+    .add-text {
+        margin-top: 1.2rem;
+    }
+
     .section-title {
         font-size: 1rem;
     }
 
     .section-paragraph {
-        font-size: .9rem;
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+
+@media screen and (width: 800px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 90%;
+    }
+
+    .add-text {
+        margin-top: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+
+@media screen and (width: 768px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 90%;
+    }
+
+    .add-text {
+        margin-top: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .add-title {
+        font-size: 2.5rem;
+    }
+
+    .add-section {
+        width: 90%;
+        height: 30rem;
+        display: block;
+    }
+
+    iframe {
+        width: 90%;
+        height: 50%;
+        margin-top: 1rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.9rem;
         width: 80%;
     }
 }
@@ -68,7 +206,13 @@
     }
 
     .add-section {
-        width: 100%;
+        width: 93%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 55%;
+        margin-top: 1rem;
     }
 
     .section-title {
@@ -76,7 +220,7 @@
     }
 
     .section-paragraph {
-        font-size: .8rem;
+        font-size: 0.8rem;
         width: 80%;
     }
 }
