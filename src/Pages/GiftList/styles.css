@@ -57,10 +57,28 @@
     padding: 0.3rem;
 }
 
-.donates-keys p {
+.pix-paragraph {
     color: var(--offwhite);
     font-weight: bold;
     letter-spacing: 0.1rem;
+}
+
+.show {
+   transition: all 0.3s ease-in-out;
+}
+
+.show-hidden-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.show {
+    color: var(--offwhite);
+}
+
+.pix {
+    filter: blur(0.2rem);
 }
 
 /* MEDIA ______________________________________________________________ */
