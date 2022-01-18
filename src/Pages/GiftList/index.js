@@ -4,7 +4,7 @@ import { ReactComponent as EyeOpen } from '../../assets/eyeOpen.svg';
 import { ReactComponent as EyeClose } from '../../assets/eyeClose.svg';
 
 import './styles.css'
-import ListItems from '../../Context/List';
+import ListItems from '../../Components/List';
 
 
 export default function GiftList() {

@@ -114,3 +114,22 @@
         height: 20rem;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .gift-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 93%;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .donates-container {
+        height: 20rem;
+    }
+
+    .donates-title {
+        font-size: 2.5rem;
+    }
+}

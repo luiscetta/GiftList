@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import './styles.css';
-import Modal from '../../Components/Modal';
+import Modal from '../Modal';
 
 
 const ListItems = () => {

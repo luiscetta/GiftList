@@ -44,9 +44,9 @@
 
     &:before,
     &:after {
-        content: ' ';
+        content: " ";
         position: absolute;
-        width: .2rem;
+        width: 0.2rem;
         height: 1.1rem;
         background-color: var(--greentext);
     }
@@ -90,6 +90,128 @@
     font-weight: bold;
     transition: all 0.3s ease-in;
     background-color: #474d46;
-    border: .1rem solid var(--greentext);
+    border: 0.1rem solid var(--greentext);
     color: var(--offwhite);
+}
+
+// MEDIA ______________________________________________________________________________________
+@media screen and (max-width: 428px) {
+    .modal-container {
+        width: 90%;
+
+        .modal-input {
+            width: 97%;
+            height: 1.5rem;
+        }
+
+        .close {
+            right: calc(-100% + 30px);
+            margin-bottom: 0.3rem;
+
+            &:before,
+            &:after {
+                height: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (width: 414px) {
+    .modal-container {
+        width: 93%;
+
+        .modal-form {
+            margin: auto;
+            width: 85%;
+
+            .modal-input {
+                width: 97.9%;
+            }
+        }
+
+        .close {
+            right: calc(-100% + 20px);
+            margin-bottom: 0.3rem;
+
+            &:before,
+            &:after {
+                height: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (width: 412px) {
+    .modal-container {
+        width: 93%;
+
+        .modal-form {
+            margin: auto;
+            width: 85%;
+
+            .modal-input {
+                width: 97.9%;
+            }
+        }
+
+        .close {
+            right: calc(-100% + 20px);
+            margin-bottom: 0.3rem;
+
+            &:before,
+            &:after {
+                height: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (width: 411px) {
+    .modal-container {
+        width: 93%;
+
+        .modal-form {
+            margin: auto;
+            width: 85%;
+
+            .modal-input {
+                width: 97.9%;
+            }
+        }
+
+        .close {
+            right: calc(-100% + 20px);
+            margin-bottom: 0.3rem;
+
+            &:before,
+            &:after {
+                height: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (width: 320px) {
+    .modal-container {
+        width: 93%;
+
+        .modal-form {
+            margin: auto;
+            width: 85%;
+
+            .modal-input {
+                width: 97%;
+            }
+        }
+
+        .close {
+            right: calc(-100% + 27px);
+            margin-bottom: 0.3rem;
+
+            &:before,
+            &:after {
+                height: 1.2rem;
+            }
+        }
+    }
 }
