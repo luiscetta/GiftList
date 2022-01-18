@@ -1,26 +1,36 @@
 import { useState } from 'react';
 
-import './styles.css';
 import Modal from '../Modal';
+import GiftConfirmationForm from '../Forms/GiftConfirmationForm';
+import './styles.scss';
 
 
 const ListItems = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [gifts, setGifts] = useState([]);
+
+    const toggleModal = () => setIsModalVisible(!isModalVisible);
+    const addGifts = (e) => {
+        if (e.target.checked) {
+            setGifts(previous => [...previous, e.target.value]);
+        }
+        else setGifts(previous => [...previous.filter(p => p !== e.target.value)]);
+    };
 
     return (
         <div className="scroll-container">
             <h2 className="gift-title">Lista de Presentes</h2>
             <div className="overflow">
                 <div className="scroll-content">
-                    <input onClick={() => setIsModalVisible(true)} type="checkbox" id="check1" className="check-input" />
+                    <input onClick={addGifts} type="checkbox" id="check1" className="check-input" value="Abridor de Garrafa" />
                     <label htmlFor="check1">Abridor de Garrafa</label>
                 </div>
                 <div className="scroll-content">
-                    <input onClick={() => setIsModalVisible(true)} id="check2" type="checkbox" className="check-input" />
+                    <input onClick={addGifts} id="check2" type="checkbox" className="check-input" value="Abridor de Lata" />
                     <label htmlFor="check2">Abridor de Lata</label>
                 </div>
                 <div className="scroll-content">
-                    <input onClick={() => setIsModalVisible(true)} id="check3" type="checkbox" className="check-input" />
+                    <input onClick={addGifts} id="check3" type="checkbox" className="check-input" value="Açucareiro" />
                     <label htmlFor="check3">Açucareiro</label>
                 </div>
                 <div className="scroll-content">
@@ -384,27 +394,35 @@ const ListItems = () => {
                     <label htmlFor="check91">Travessas/Refratários</label>
                 </div>
                 <div className="scroll-content">
-                    <input onClick={() => setIsModalVisible(true)} id="check92" type="checkbox" className="check-input" />
+                    <input id="check92" type="checkbox" className="check-input" />
                     <label htmlFor="check92">Vassoura Piassava e de Pelo</label>
                 </div>
                 <div className="scroll-content">
-                    <input onClick={() => setIsModalVisible(true)} id="check93" type="checkbox" className="check-input" />
+                    <input id="check93" type="checkbox" className="check-input" />
                     <label htmlFor="check93">Rodo</label>
                 </div>
                 <div className="scroll-content">
-                    <input onClick={() => setIsModalVisible(true)} id="check94" type="checkbox" className="check-input" />
+                    <input id="check94" type="checkbox" className="check-input" />
                     <label htmlFor="check94">Pá de Lixo</label>
                 </div>
             </div>
-            {isModalVisible
-                ?
-                <Modal onClose={() => setIsModalVisible(false)}>
-                    <label className="modal-label" htmlFor="modalInput">Digite seu nome:</label>
-                    <input className="modal-input" id="modalInput" type="text" />
-                    <button className="modal-btn" type="submit">Confirmar</button>
+            <div className="gift-confirmation">
+                <button onClick={toggleModal}>Confirmar Presentes</button>
+            </div>
+            {isModalVisible ?
+                <Modal onClose={toggleModal}>
+                    {gifts.length ?
+                        <GiftConfirmationForm gifts={gifts} />
+                        :
+                        <div className="no-gifts-chosen">
+                            <span>Selecione um presente primeiro!</span>
+                            <button onClick={toggleModal}>Ok</button>
+                        </div>
+                    }
                 </Modal>
                 :
-                null}
+                null
+            }
         </div>
     );
 }

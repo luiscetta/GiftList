@@ -1,0 +1,44 @@
+.gift-confirmation-form {
+    margin: 0.3rem auto 0;
+    width: 19rem;
+    height: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        background-color: var(--greentext);
+        border-radius: 0.3rem 0.3rem 0 0;
+    
+        color: var(--offwhite);
+        font-weight: bold;
+    }
+    
+    input {
+        width: 18.54rem;
+        border-radius: 0 0 0.3rem 0.3rem;
+        margin-bottom: 1rem;
+        outline: none;
+    }
+    
+    button {
+        width: 8rem;
+        height: 2rem;
+        margin: auto;
+        background-color: var(--greentext);
+        color: var(--offwhite);
+        border: none;
+        border-radius: 0.5rem 0.1rem 0.5rem 0.1rem;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        font-weight: bold;
+        transition: all 0.3s ease-in;
+        background-color: #474d46;
+        border: 0.1rem solid var(--greentext);
+        color: var(--offwhite);
+    }
+}
+
+
