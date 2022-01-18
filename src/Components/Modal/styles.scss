@@ -1,0 +1,95 @@
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #252525a8;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    z-index: 2;
+    background-color: var(--offwhite);
+    border: 0.2rem solid var(--greentext);
+    width: 23rem;
+    height: 10rem;
+    border-radius: 1rem 2rem 1rem 2rem;
+}
+
+.modal-form {
+    margin: 0.3rem auto 0;
+    width: 19rem;
+    height: 8rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    right: calc(-100% + 10px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        content: ' ';
+        position: absolute;
+        width: .2rem;
+        height: 1.1rem;
+        background-color: var(--greentext);
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.modal-label {
+    background-color: var(--greentext);
+    border-radius: 0.3rem 0.3rem 0 0;
+
+    color: var(--offwhite);
+    font-weight: bold;
+}
+
+.modal-input {
+    width: 18.54rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.modal-btn {
+    width: 8rem;
+    height: 2rem;
+    margin: auto;
+    background-color: var(--greentext);
+    color: var(--offwhite);
+    border: none;
+    border-radius: 0.5rem 0.1rem 0.5rem 0.1rem;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+    background-color: #474d46;
+    border: .1rem solid var(--greentext);
+    color: var(--offwhite);
+}

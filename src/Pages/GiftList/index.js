@@ -1,22 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
-
-import './styles.css'
-import ListItems from '../../Context/List';
 import { ReactComponent as EyeOpen } from '../../assets/eyeOpen.svg';
 import { ReactComponent as EyeClose } from '../../assets/eyeClose.svg';
 
+import './styles.css'
+import ListItems from '../../Context/List';
 
 
 export default function GiftList() {
     const [blur, setBlur] = useState(true);
-    const [open, setOpen] = useState(['eye-open']);
 
     function togglePix() {
         setBlur(!blur);
-        setOpen(!open);
     }
-
 
     return (
         <div className="gift-container">
@@ -28,11 +24,11 @@ export default function GiftList() {
                     <div className="donates-keys">
                         <p className="pix-paragraph">PIX: <span className={` 'show' ${blur ? 'pix' : 'show'} `}>21982093912</span></p>
                         <button className="show-hidden-btn" type="button" onClick={togglePix}>
-                            {open
+                            {blur
                                 ?
-                                <EyeOpen className="eye-open" />
+                                <EyeClose className="eye-open" />
                                 :
-                                <EyeClose className="eye-close" />
+                                <EyeOpen className="eye-close" />
                             }
                         </button>
                     </div>
