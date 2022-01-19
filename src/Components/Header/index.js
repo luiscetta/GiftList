@@ -5,12 +5,12 @@ import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
 import './styles.scss';
 
-const Header = props => {
+const Header = ({ drawerClickHandler }) => {
 
     return (
         <header className="toolbar">
             <nav className="toolbar-navigation" >
-                <DrawerToggleButton onClick={props.drawerClickHandler} />
+                <DrawerToggleButton onClick={drawerClickHandler} />
                 <div className="toolbar-logo"><a href="/">Logo</a></div>
                 <div className="spacer" />
                 <div className="toolbar-navigation-items">

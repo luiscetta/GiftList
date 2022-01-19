@@ -5,28 +5,17 @@ import { Routes } from '../../routes';
 import Header from '../Header';
 import Footer from '../Footer';
 import SideDrawer from '../SideDrawer/SideDrawer';
-import Backdrop from '../Backdrop/Backdrop';
+
 
 export default function Layout() {
-    const [sideDrawerOpen, setSideDrawer] = useState(false);
+    const [isMenuCollapsed, setIsMenuCollapsed] = useState(true);
 
-    const drawerToggleClickHandler = () => {
-        setSideDrawer(!sideDrawerOpen);
-    }
-
-    let sideDrawer;
-    let backdrop;
-
-    if (sideDrawerOpen) {
-        sideDrawer = <SideDrawer />;
-        backdrop = <Backdrop />;
-    }
+    const drawerToggleClickHandler = () => setIsMenuCollapsed(!isMenuCollapsed);
 
     return (
         <>
-            <Header drawerToggleClickHandler={drawerToggleClickHandler} />
-            {sideDrawer}
-            {backdrop}
+            <Header drawerClickHandler={drawerToggleClickHandler} />
+            {!isMenuCollapsed ? <SideDrawer /> : null}
             <Routes />
             <Footer />
         </>
