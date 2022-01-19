@@ -2,7 +2,7 @@
 
 .gift-container {
     width: 68%;
-    height: 30rem;
+    height: 35rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -82,51 +82,51 @@
 }
 
 /* MEDIA ______________________________________________________________ */
+@media screen and (width: 1024px) {
+    .gift-container {
+        width: 85%;
+        height: 25rem;
+        padding-bottom: 5rem;
+    }
+}
+
 @media screen and (width: 810px) {
     .gift-container {
         width: 85%;
+        height: 25rem;
+        padding-bottom: 5rem;
     }
 }
 
 @media screen and (width: 800px) {
     .gift-container {
-        width: 85%;
+        width: 88%;
+        height: 25rem;
+        padding-bottom: 5rem;
     }
 }
 
 @media screen and (width: 768px) {
     .gift-container {
         width: 85%;
+        height: 25rem;
+        padding-bottom: 5rem;
     }
 }
+
 
 @media screen and (max-width: 428px) {
     .gift-container {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 53rem;
         width: 93%;
         border-radius: 1rem;
         margin-bottom: 3rem;
     }
 
     .donates-container {
-        height: 20rem;
-    }
-}
-
-@media screen and (max-width: 428px) {
-    .gift-container {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 93%;
-        border-radius: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .donates-container {
-        height: 20rem;
+        height: 16rem;
     }
 
     .donates-title {

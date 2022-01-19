@@ -34,7 +34,7 @@ export default function GiftConfirmationForm({ selectedGifts }) {
             </ul>
             <form className="gift-confirmation-form" onSubmit={handleSubmit}>
                 <label htmlFor="modalInput">Digite seu nome:</label>
-                <input id="modalInput" type="text" onChange={(e) => setGiftGiver(e.target.value)} required />
+                <input id="modalInput" type="text" onChange={(e) => setGiftGiver(e.target.value)} required autoComplete="off"/>
                 <button type="submit">Confirmar</button>
             </form>
         </div>

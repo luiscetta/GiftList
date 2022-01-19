@@ -3,7 +3,7 @@
     height: 25rem;
     text-align: center;
     background-color: var(--greentext);
-    border-radius: .5rem .5rem 0 .5rem;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .gift-title {
@@ -48,24 +48,38 @@
     accent-color: rgb(243, 180, 224);
 }
 
-.gift-confirmation button {
+.btn-gift-confirmation {
+    bottom: 0;
     width: 8rem;
-    height: 2rem;
-    margin: auto;
-    color: black;
+    height: 2.5rem;
+    margin: 1rem auto;
+    background-color: #fff;
     border: none;
+    color: var(--greentext);
     border-radius: 0.5rem 0.1rem 0.5rem 0.1rem;
     cursor: pointer;
+}
+
+.btn-gift-confirmation:hover {
+    background-color: var(--offwhite);
+    color: var(--greentext);
+    font-weight: bold;
+    transition: all 0.3s ease-in;
 }
 
 .no-gifts-chosen {
     display: flex;
     flex-direction: column;
-    
+
+    span {
+        color: var(--greentext);
+        margin-bottom: 1.5rem;
+    }
+
     button {
         width: 8rem;
         height: 2rem;
-        margin: auto;
+        margin: 0 auto 1rem;
         color: var(--offwhite);
         background-color: var(--greentext);
         border: none;
@@ -85,9 +99,13 @@
     .gift-title {
         font-size: 2.3rem;
     }
-    
+
     .overflow {
         height: 18.4rem;
+    }
+
+    .gift-confirmation {
+       margin: 0 auto 3rem;
     }
 
     .scroll-content {

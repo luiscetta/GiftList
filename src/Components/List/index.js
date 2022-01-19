@@ -47,7 +47,7 @@ const ListItems = () => {
                 {giftList.map((gift, i) => <Gift gift={gift} onCheck={(e) => addGifts(e, gift)} key={i} />)}
             </div>
             <div className="gift-confirmation">
-                <button onClick={toggleModal}>Confirmar Presentes</button>
+                <button className="btn-gift-confirmation" onClick={toggleModal}>Confirmar Presentes</button>
             </div>
             {isModalVisible ?
                 <Modal onClose={toggleModal}>
