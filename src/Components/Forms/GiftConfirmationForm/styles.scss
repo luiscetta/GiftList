@@ -10,7 +10,7 @@
         padding: 0;
 
         text-align: center;
-        list-style-type: decimal;
+        list-style: none;
         line-height: 1.4rem;
         color: var(--offwhite);
     }
@@ -37,7 +37,7 @@
             border-radius: 0 0 0.3rem 0.3rem;
             margin-bottom: 1rem;
             outline: none;
-            border: .15rem solid var(--greentext);
+            border: 0.15rem solid var(--greentext);
             color: var(--greentext);
         }
 
@@ -58,6 +58,25 @@
             background-color: #474d46;
             border: 0.1rem solid var(--greentext);
             color: var(--offwhite);
+        }
+    }
+}
+
+// MEDIA _________________________________________________________________________________
+@media screen and (width: 320px) {
+    .chosen-gifts {
+        .gift-confirmation-form {
+            margin: auto;
+
+            label {
+                margin: 0 auto 0;
+                width: 92.6%;
+            }
+            
+            input {
+                margin: 0 auto 0;
+                width: 90%;
+            }
         }
     }
 }

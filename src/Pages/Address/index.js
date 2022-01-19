@@ -5,8 +5,9 @@ const src_maps = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.958
 export default function Address() {
     return (
         <div className="add-container">
-            <h2 className="add-title">Local do Evento</h2>
+
             <div className="add-content">
+                <h2 className="add-title">Local do Evento</h2>
                 <div className="add-section">
                     <iframe title="maps" src={src_maps} loading="lazy" />
                     <div className="add-text">

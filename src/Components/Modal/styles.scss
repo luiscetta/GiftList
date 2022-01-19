@@ -53,21 +53,20 @@
 
 // MEDIA ______________________________________________________________________________________
 @media screen and (max-width: 428px) {
-    .modal-container {
-        width: 90%;
+    .modal {
+        height: 126.5vh;
 
-        .modal-input {
-            width: 97%;
-            height: 1.5rem;
-        }
+        .modal-container {
+            width: 90%;
 
-        .close {
-            right: calc(-100% + 30px);
-            margin-bottom: 0.3rem;
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
 
-            &:before,
-            &:after {
-                height: 1.5rem;
+                &:before,
+                &:after {
+                    height: 1.5rem;
+                }
             }
         }
     }
@@ -77,17 +76,8 @@
     .modal-container {
         width: 93%;
 
-        .modal-form {
-            margin: auto;
-            width: 85%;
-
-            .modal-input {
-                width: 97.9%;
-            }
-        }
-
         .close {
-            right: calc(-100% + 20px);
+            right: calc(-100% + 45px);
             margin-bottom: 0.3rem;
 
             &:before,
@@ -102,22 +92,32 @@
     .modal-container {
         width: 93%;
 
-        .modal-form {
-            margin: auto;
-            width: 85%;
-
-            .modal-input {
-                width: 97.9%;
-            }
-        }
-
         .close {
-            right: calc(-100% + 20px);
+            right: calc(-100% + 45px);
             margin-bottom: 0.3rem;
 
             &:before,
             &:after {
                 height: 1.2rem;
+            }
+        }
+    }
+}
+@media screen and (width: 412px) and (height: 732px) {
+    .modal {
+        height: 131.3vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
             }
         }
     }
@@ -127,17 +127,8 @@
     .modal-container {
         width: 93%;
 
-        .modal-form {
-            margin: auto;
-            width: 85%;
-
-            .modal-input {
-                width: 97.9%;
-            }
-        }
-
         .close {
-            right: calc(-100% + 20px);
+            right: calc(-100% + 45px);
             margin-bottom: 0.3rem;
 
             &:before,
@@ -147,27 +138,160 @@
         }
     }
 }
+@media screen and (width: 411px) and (height: 731px) {
+    .modal {
+        height: 131.4vh;
 
-@media screen and (width: 320px) {
-    .modal-container {
-        width: 93%;
+        .modal-container {
+            width: 93%;
 
-        .modal-form {
-            margin: auto;
-            width: 85%;
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
 
-            .modal-input {
-                width: 97%;
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
             }
         }
+    }
+}
 
-        .close {
-            right: calc(-100% + 27px);
-            margin-bottom: 0.3rem;
+@media screen and (width: 384px) {
+    .modal {
+        height: 127.5vh;
 
-            &:before,
-            &:after {
-                height: 1.2rem;
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width: 384px) and (height: 640px) {
+    .modal {
+        height: 150.1vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width: 375px) {
+    .modal {
+        height: 129.3vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (width: 375px) and (height: 667px) {
+    .modal {
+        height: 144vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width: 360px) {
+    .modal {
+        height: 134vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width: 360px) and (height: 640px) {
+    .modal {
+        height: 150.2vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 45px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width: 320px) {
+    .modal {
+        height: 169.2vh;
+
+        .modal-container {
+            width: 93%;
+
+            .close {
+                right: calc(-100% + 43px);
+                margin-bottom: 0.3rem;
+
+                &:before,
+                &:after {
+                    height: 1.2rem;
+                }
             }
         }
     }

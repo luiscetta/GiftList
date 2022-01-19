@@ -1,17 +1,30 @@
-import './styles.css';
 
-const Header = () => {
+import React from 'react';
+
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+
+import './styles.scss';
+
+const Header = props => {
+
     return (
-        <div className="header-container">
-            <div className="header-content">
-                <a className="nav-link" href="/">Página Inicial</a>
-                <a className="nav-link" href="/gift-list">Lista de Presentes</a>
-                <a className="nav-link" href="/presence">Confirme sua presença</a>
-                <a className="nav-link" href="/contact">Contato</a>
-                <a className="nav-link" href="/address">Local do Evento</a>
-            </div>
-        </div>
+        <header className="toolbar">
+            <nav className="toolbar-navigation" >
+                <DrawerToggleButton onClick={props.drawerClickHandler} />
+                <div className="toolbar-logo"><a href="/">Logo</a></div>
+                <div className="spacer" />
+                <div className="toolbar-navigation-items">
+                    <ul>
+                        <li><a href="/">Página Inicial</a></li>
+                        <li><a href="/gift-list">Lista de Presentes</a></li>
+                        <li><a href="/presence">Confirmação de Presença</a></li>
+                        <li><a href="/contact">Contatos</a></li>
+                        <li><a href="/address">Local do Evento</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     );
-}
+};
 
 export default Header;

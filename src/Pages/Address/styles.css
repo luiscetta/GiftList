@@ -9,34 +9,33 @@
     font-family: "The Nautigal", cursive;
     font-size: 3.1rem;
     color: var(--greentext);
-    margin: 1.3rem auto;
+    margin: 1.3rem auto 0;
 }
 
 .add-content {
-    width: 100%;
-    margin: auto;
-}
-
-.add-section {
     width: 60%;
-    height: 25rem;
     margin: auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
 
     background-color: var(--offwhite);
     border-radius: 2rem;
     box-shadow: 0.6rem 0.2rem 0.3rem rgba(106, 116, 103, 0.678);
 }
 
+.add-section {
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 iframe {
     width: 25rem;
     height: 20rem;
     margin: auto;
-    border: .3rem solid var(--greentext);
-    border-radius: 0 0 .8rem 0;
+    border: 0.3rem solid var(--greentext);
+    border-radius: 0 0 0.8rem 0;
 }
 
 .add-text {
@@ -63,9 +62,14 @@ iframe {
     .add-title {
         font-size: 2.5rem;
     }
+    
+    .add-content {
+        width: 56.8%;
+        margin-top: 5rem;
+    }
 
     .add-section {
-        width: 56%;
+        width: 100%;
     }
 
     .add-text {
@@ -74,7 +78,7 @@ iframe {
 
     .section-title {
         font-size: 1rem;
-        margin: 1.1rem 0;
+        margin: 16.5px 0;
     }
 
     .section-paragraph {
@@ -88,12 +92,16 @@ iframe {
         font-size: 2.5rem;
     }
 
-    .add-section {
+    .add-content {
         width: 63.9%;
     }
 
+    .add-section {
+        width: 100%;
+    }
+
     .add-text {
-        margin-top: 1.2rem;
+        margin-top: 1.15rem;
     }
 
     .section-title {
@@ -112,12 +120,16 @@ iframe {
         font-size: 2.5rem;
     }
 
-    .add-section {
+    .add-content {
         width: 79%;
     }
 
+    .add-section {
+        width: 100%;
+    }
+
     .add-text {
-        margin-top: 1.2rem;
+        margin-top: 1.15rem;
     }
 
     .section-title {
@@ -136,8 +148,12 @@ iframe {
         font-size: 2.5rem;
     }
 
-    .add-section {
+    .add-content {
         width: 90%;
+    }
+
+    .add-section {
+        width: 100%;
     }
 
     .add-text {
@@ -146,7 +162,7 @@ iframe {
 
     .section-title {
         font-size: 1rem;
-        margin: 1.1rem 0;
+        margin: 16.5px 0;
     }
 
     .section-paragraph {
@@ -160,12 +176,16 @@ iframe {
         font-size: 2.5rem;
     }
 
-    .add-section {
+    .add-content {
         width: 90%;
     }
 
+    .add-section {
+        width: 100%;
+    }
+
     .add-text {
-        margin-top: 1.2rem;
+        margin-top: 1.15rem;
     }
 
     .section-title {
@@ -185,7 +205,7 @@ iframe {
     }
 
     .add-section {
-        width: 90%;
+        width: 100%;
     }
 
     .add-text {
@@ -207,8 +227,12 @@ iframe {
         font-size: 2.5rem;
     }
 
+    .add-content {
+        width: 88%;
+    }
+
     .add-section {
-        width: 90%;
+        width: 100%;
         height: 30rem;
         display: block;
     }
@@ -235,7 +259,7 @@ iframe {
     }
 
     .add-section {
-        width: 93%;
+        width: 100%;
     }
 
     iframe {
