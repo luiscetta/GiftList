@@ -17,13 +17,13 @@ export default function GiftConfirmationForm({ selectedGifts }) {
             gift.From = giftGiver;
             try {
                 await GoogleSheetsService.UpdateGiftList(gift);
-                storage.setItem('giftConfirmationSuccess', true);
-                refresh();
             } catch (err) {
                 console.error(err);
                 ErrorToast('Ocorreu um erro inesperado! Por favor tente novamente!');
             }
         }
+        storage.setItem('giftConfirmationSuccess', true);
+        refresh();
     };
 
     return (
