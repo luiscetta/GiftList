@@ -1,4 +1,4 @@
-.side-drawer {
+.side-menu {
     height: 100%;
     background-color: var(--greentext);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -10,7 +10,7 @@
     z-index: 200;
 }
 
-.side-drawer ul {
+.side-menu ul {
     height: 100%;
     list-style: none;
     display: flex;
@@ -18,17 +18,17 @@
     justify-content: center;
 }
 
-.side-drawer li {
+.side-menu li {
     margin: .5rem 0;   
 }
 
-.side-drawer a {
+.side-menu a {
     color: rgb(248, 200, 243);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.side-drawer a:hover,
-.side-drawer a:active {
+.side-menu a:hover,
+.side-menu a:active {
     color: var(--offwhite);
 }

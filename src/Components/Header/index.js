@@ -1,16 +1,14 @@
-
 import React from 'react';
 
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-
+import MenuToggleButton from '../SideMenu/MenuToggleButton';
 import './styles.scss';
 
-const Header = ({ drawerClickHandler }) => {
 
+export default function Header({ menuToggleHandler }) {
     return (
         <header className="toolbar">
             <nav className="toolbar-navigation" >
-                <DrawerToggleButton onClick={drawerClickHandler} />
+                <MenuToggleButton onClick={menuToggleHandler} />
                 <div className="toolbar-logo"><a href="/">Logo</a></div>
                 <div className="spacer" />
                 <div className="toolbar-navigation-items">
@@ -26,5 +24,3 @@ const Header = ({ drawerClickHandler }) => {
         </header>
     );
 };
-
-export default Header;

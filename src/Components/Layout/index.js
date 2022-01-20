@@ -4,18 +4,18 @@ import { useState } from 'react';
 import { Routes } from '../../routes';
 import Header from '../Header';
 import Footer from '../Footer';
-import SideDrawer from '../SideDrawer/SideDrawer';
+import SideMenu from '../SideMenu';
 
 
 export default function Layout() {
     const [isMenuCollapsed, setIsMenuCollapsed] = useState(true);
 
-    const drawerToggleClickHandler = () => setIsMenuCollapsed(!isMenuCollapsed);
+    const menuToggleHandler = () => setIsMenuCollapsed(!isMenuCollapsed);
 
     return (
         <>
-            <Header drawerClickHandler={drawerToggleClickHandler} />
-            {!isMenuCollapsed ? <SideDrawer /> : null}
+            <Header menuToggleHandler={menuToggleHandler} />
+            {!isMenuCollapsed ? <SideMenu /> : null}
             <Routes />
             <Footer />
         </>

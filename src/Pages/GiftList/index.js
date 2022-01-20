@@ -1,22 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
+
 import { ReactComponent as EyeOpen } from '../../assets/eyeOpen.svg';
 import { ReactComponent as EyeClose } from '../../assets/eyeClose.svg';
+import GiftListItems from '../../Components/GiftListItems';
 
 import './styles.css'
-import ListItems from '../../Components/List';
 
 
 export default function GiftList() {
     const [blur, setBlur] = useState(true);
 
-    function togglePix() {
-        setBlur(!blur);
-    }
+    const togglePix = () => setBlur(!blur);
 
     return (
         <div className="gift-container">
-            <ListItems />
+            <GiftListItems />
             <div className="donates-container">
                 <h2 className="donates-title">Presentear em Dinheiro</h2>
                 <div className="donates-content">
@@ -35,5 +34,5 @@ export default function GiftList() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

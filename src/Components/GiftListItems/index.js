@@ -9,7 +9,7 @@ import * as GoogleSheetsService from '../../services/GoogleSheets';
 import './styles.scss';
 
 
-const ListItems = () => {
+export default function GiftListItems() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedGifts, setSelectedGifts] = useState([]);
     const [giftList, setGiftList] = useState([]);
@@ -66,5 +66,3 @@ const ListItems = () => {
         </div>
     );
 }
-
-export default ListItems;
