@@ -83,6 +83,26 @@
     }
 }
 
+@media screen and (width: 360px) {
+    .home-content {
+        width: 90%;
+        margin-bottom: 2.3rem;
+    }
+
+    .home-title {
+        font-size: 1.9rem;
+    }
+
+    .home-text {
+        width: 68%;
+        font-size: 1rem;
+    }
+
+    .footer-description {
+        font-size: 0.85rem;
+    }
+}
+
 @media screen and (width: 320px) {
     .home-content {
         width: 92%;
@@ -101,5 +121,3 @@
         font-size: 0.85rem;
     }
 }
-
-

@@ -16,7 +16,11 @@ export default function Home() {
                         Olá, queridos! Esse site é para passarmos as informações sobre horário e <span><a className="link-list" href="/Address">local do Chá de Panela</a></span>.
                     </p>
                     <p className="home-description">
-                        Vocês também devem confirmar sua presença até o dia <span>00/00/2022</span> pra termos noção de quantas pessoas irão.
+                        O evento irá acontecer no dia <span>12/03/22.</span>
+                    </p>
+
+                    <p className="home-description">
+                        Vocês também devem confirmar sua presença até o dia <span>01/03/2022</span> pra termos noção de quantas pessoas irão.
                     </p>
                     <p className="home-description">
                         E por último, não menos importante, aqui contém nossa <a className="link-list" href="/gift-list" >Lista do Chá de Panela</a>. Para escolher um item basta selecionar um ou mais itens da lista, clicar em <span>Confirmar Presentes</span>, digitar seu nome no campo e pronto!
