@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 toast.configure({
     style: { 
         fontWeight: 'bold',
-        fontSize: '1.1rem',
+        fontSize: '.9rem',
     },
 });
 
