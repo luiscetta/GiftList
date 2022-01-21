@@ -11,6 +11,7 @@ export default function Presence() {
     useEffect(() => {
         if (storage.getItem('presenceConfirmationSuccess')) {
             SuccessToast('Presença confirmada com sucesso!', { position: toast.POSITION.TOP_CENTER });
+            storage.removeItem('presenceConfirmationSuccess');
         }
     });
 
