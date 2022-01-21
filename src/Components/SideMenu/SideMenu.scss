@@ -64,6 +64,47 @@
     }
 }
 
+// MEDIA ________________________________________________________________________________
+@media screen and (max-width: 428px) {
+    .side-menu {
+        a {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (width: 375px) {
+    .side-menu {
+        a {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (width: 360px) and (height: 640px) {
+    .side-menu {
+        ul {
+            margin-top: 3rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (width: 320px) {
+    .side-menu {
+        ul {
+            margin-top: 3rem;
+            width: 80%;
+        }
+
+        a {
+            font-size: 1.1rem;
+        }
+    }
+}
 
 
 
