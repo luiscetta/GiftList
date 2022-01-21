@@ -5,6 +5,7 @@ import { SuccessToast } from '../../utils/toast';
 import Gift from './Gift';
 import GiftConfirmationForm from '../Forms/GiftConfirmationForm';
 import Modal from '../Modal';
+import Loading from '../Loader';
 import * as SheetsService from '../../services/Sheets';
 import './styles.scss';
 
@@ -13,6 +14,7 @@ export default function GiftListItems() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedGifts, setSelectedGifts] = useState([]);
     const [giftList, setGiftList] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     const storage = window.sessionStorage;
 
     useEffect(() => {
@@ -27,6 +29,7 @@ export default function GiftListItems() {
             if (!giftList.length) {
                 const gifts = await SheetsService.GetGiftList();
                 setGiftList(gifts.filter(g => !g.From));
+                setIsLoading(false);
             }
         }
         loadGiftList();
@@ -41,28 +44,36 @@ export default function GiftListItems() {
     };
 
     return (
-        <div className="scroll-container">
-            <h2 className="gift-title">Lista de Presentes</h2>
-            <div className="overflow">
-                {giftList.map((gift, i) => <Gift gift={gift} onCheck={(e) => addGifts(e, gift)} key={i} />)}
+        <>      
+            <div className="scroll-container">
+                <h2 className="gift-title">Lista de Presentes</h2>
+                <div className="overflow">
+                    {
+                        isLoading ? <Loading /> 
+                        : 
+                        giftList.map((gift, i) => (
+                            <Gift gift={gift} onCheck={(e) => addGifts(e, gift)} key={i} />
+                        )
+                    )}
+                </div>
+                <div className="gift-confirmation">
+                    <button className="btn-gift-confirmation" onClick={toggleModal}>Confirmar Presentes</button>
+                </div>
+                {isModalVisible ?
+                    <Modal onClose={toggleModal}>
+                        {selectedGifts.length ?
+                            <GiftConfirmationForm selectedGifts={selectedGifts} />
+                            :
+                            <div className="no-gifts-chosen">
+                                <span>Selecione um presente primeiro!</span>
+                                <button onClick={toggleModal}>Ok</button>
+                            </div>
+                        }
+                    </Modal>
+                    :
+                    null
+                }
             </div>
-            <div className="gift-confirmation">
-                <button className="btn-gift-confirmation" onClick={toggleModal}>Confirmar Presentes</button>
-            </div>
-            {isModalVisible ?
-                <Modal onClose={toggleModal}>
-                    {selectedGifts.length ?
-                        <GiftConfirmationForm selectedGifts={selectedGifts} />
-                        :
-                        <div className="no-gifts-chosen">
-                            <span>Selecione um presente primeiro!</span>
-                            <button onClick={toggleModal}>Ok</button>
-                        </div>
-                    }
-                </Modal>
-                :
-                null
-            }
-        </div>
+        </>
     );
 }
