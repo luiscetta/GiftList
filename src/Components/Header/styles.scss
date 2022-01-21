@@ -14,7 +14,7 @@
 
         .toolbar-logo {
             margin-left: 1rem;
-            
+
             a {
                 color: var(--greentext);
                 text-decoration: none;
@@ -23,37 +23,92 @@
         }
 
         .spacer {
-            flex: .4;
+            flex: 0.4;
         }
 
         .toolbar-navigation-items {
             ul {
-                list-style: none; 
-                margin: 0; 
-                padding: 0; 
+                list-style: none;
+                margin: 0;
+                padding: 0;
                 display: flex;
             }
 
             li {
-                padding: 0 .5rem;
+                padding: 0 0.8rem;
             }
 
             a {
                 color: var(--greentext);
                 text-decoration: none;
                 list-style-type: none;
+                padding: 1.15rem 0.3rem;
             }
-            
+
             a:hover {
                 background-color: var(--greentext);
+                border-radius: 0.3rem 1rem 0.3rem 1rem;
                 color: var(--offwhite);
+                transition: all 0.3s ease-in;
             }
         }
     }
-    
-    @media screen and (max-width: 480px) {
-        .toolbar-navigation-items {
-            display: none;
+}
+
+// MEDIA______________________________________________________________________________________
+@media screen and (width: 810px) {
+    .toolbar {
+        .toolbar-navigation {
+            // .toolbar-logo {
+
+            // }
+            
+            .toolbar-navigation-items {
+                a {
+                    font-size: .87rem;
+                    padding: 0 0 .1rem;
+                }
+            }
         }
+    }
+}
+
+@media screen and (width: 800px) {
+    .toolbar {
+        .toolbar-navigation {
+            // .toolbar-logo {
+
+            // }
+            
+            .toolbar-navigation-items {
+                a {
+                    font-size: .87rem;
+                    padding: 0 0 .1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width: 768px) {
+    .toolbar {
+        .toolbar-navigation {
+            // .toolbar-logo {
+
+            // }
+            
+            .toolbar-navigation-items {
+                a {
+                    font-size: .87rem;
+                    padding: 0 0 .1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .toolbar-navigation-items {
+        display: none;
     }
 }
