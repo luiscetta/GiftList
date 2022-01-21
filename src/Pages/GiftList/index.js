@@ -21,7 +21,7 @@ export default function GiftList() {
                 <div className="donates-content">
                     <p className="donates-p1">Caso prefiram nos abençoar com algum valor em dinheiro:</p>
                     <div className="donates-keys">
-                        <p className="pix-paragraph">PIX: <span className={` 'show' ${blur ? 'pix' : 'show'} `}>21982093912</span></p>
+                        <p className="pix-paragraph">PIX: <span className={` 'show' ${blur ? 'pix' : 'show'} `}>21972269935</span></p>
                         <button className="show-hidden-btn" type="button" onClick={togglePix}>
                             {blur
                                 ?
