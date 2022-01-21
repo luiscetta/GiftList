@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MenuToggleButton from '../SideMenu/MenuToggleButton';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 import './styles.scss';
 
 
@@ -9,7 +10,11 @@ export default function Header({ menuToggleHandler }) {
         <header className="toolbar">
             <nav className="toolbar-navigation" >
                 <MenuToggleButton onClick={menuToggleHandler} />
-                <div className="toolbar-logo"><a href="/">Logo</a></div>
+                <div className="toolbar-logo">
+                    <a href="/">
+                        <Logo className="logo-img" />
+                    </a>
+                </div>
                 <div className="spacer" />
                 <div className="toolbar-navigation-items">
                     <ul>

@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     background-color: var(--offwhite);
-    height: 3.5rem;
+    height: 4.2rem;
 
     .toolbar-navigation {
         display: flex;
@@ -13,7 +13,12 @@
         padding: 0 1rem;
 
         .toolbar-logo {
-            margin-left: 1rem;
+            margin-left: 4.5rem;
+
+            .logo-img {
+                height: 4.3rem;
+                width: 4.3rem;
+            }
 
             a {
                 color: var(--greentext);
@@ -23,7 +28,7 @@
         }
 
         .spacer {
-            flex: 0.4;
+            flex: 0.38;
         }
 
         .toolbar-navigation-items {
@@ -59,14 +64,18 @@
 @media screen and (width: 810px) {
     .toolbar {
         .toolbar-navigation {
-            // .toolbar-logo {
+            .toolbar-logo {
+                margin: 0;
 
-            // }
-            
+                .logo-img {
+                    width: 3.7rem;
+                }
+            }
+
             .toolbar-navigation-items {
                 a {
-                    font-size: .87rem;
-                    padding: 0 0 .1rem;
+                    font-size: 0.87rem;
+                    padding: 0 0 0.1rem;
                 }
             }
         }
@@ -76,14 +85,18 @@
 @media screen and (width: 800px) {
     .toolbar {
         .toolbar-navigation {
-            // .toolbar-logo {
+            .toolbar-logo {
+                margin: 0;
 
-            // }
-            
+                .logo-img {
+                    width: 3.7rem;
+                }
+            }
+
             .toolbar-navigation-items {
                 a {
-                    font-size: .87rem;
-                    padding: 0 0 .1rem;
+                    font-size: 0.87rem;
+                    padding: 0 0 0.1rem;
                 }
             }
         }
@@ -93,14 +106,15 @@
 @media screen and (width: 768px) {
     .toolbar {
         .toolbar-navigation {
-            // .toolbar-logo {
+            align-items: center;
+            .toolbar-logo {
+                margin: 0;
+            }
 
-            // }
-            
             .toolbar-navigation-items {
                 a {
-                    font-size: .87rem;
-                    padding: 0 0 .1rem;
+                    font-size: 0.87rem;
+                    padding: 0 0 0.1rem;
                 }
             }
         }
@@ -108,7 +122,22 @@
 }
 
 @media screen and (max-width: 480px) {
-    .toolbar-navigation-items {
-        display: none;
+    .toolbar {
+        .toolbar-navigation {
+            .toolbar-logo {
+                width: 100%;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logo-img {
+                    width: 3.5rem;
+                }
+            }
+            .toolbar-navigation-items {
+                display: none;
+            }
+        }
     }
 }

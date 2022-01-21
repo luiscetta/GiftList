@@ -25,9 +25,9 @@ export default function GiftList() {
                         <button className="show-hidden-btn" type="button" onClick={togglePix}>
                             {blur
                                 ?
-                                <EyeClose className="eye-open" />
+                                <EyeOpen className="eye-open" />
                                 :
-                                <EyeOpen className="eye-close" />
+                                <EyeClose className="eye-close" />
                             }
                         </button>
                     </div>
