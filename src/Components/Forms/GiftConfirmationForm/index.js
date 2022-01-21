@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import * as GoogleSheetsService from '../../../services/GoogleSheets';
+import * as SheetsService from '../../../services/Sheets';
 import { ErrorToast } from '../../../utils/toast';
 import './styles.scss';
 
@@ -16,7 +16,7 @@ export default function GiftConfirmationForm({ selectedGifts }) {
             const gift = selectedGifts[i];
             gift.From = giftGiver;
             try {
-                await GoogleSheetsService.UpdateGiftList(gift);
+                await SheetsService.UpdateGiftList(gift);
             } catch (err) {
                 console.error(err);
                 ErrorToast('Ocorreu um erro inesperado! Por favor tente novamente!');

@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-import { google } from '../config';
+import { sheets } from '../config';
 
 
-const { giftListUrl } = google.sheets;
+const { giftListUrl, presenceListUrl } = sheets;
 
 export async function GetGiftList() {
     try {
@@ -18,6 +18,15 @@ export async function GetGiftList() {
 export async function UpdateGiftList(data) {
     try {
         await axios.patch(`${giftListUrl}/${data.Id - 1}`, data);
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
+}
+
+export async function AddToPresenceList(data) {
+    try {
+        await axios.post(presenceListUrl, data);
     } catch (err) {
         console.error(err);
         throw err;

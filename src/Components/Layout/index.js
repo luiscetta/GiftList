@@ -15,7 +15,7 @@ export default function Layout() {
     return (
         <>
             <Header menuToggleHandler={menuToggleHandler} />
-            {!isMenuCollapsed ? <SideMenu /> : null}
+            {!isMenuCollapsed ? <SideMenu closeHandler={menuToggleHandler} /> : null}
             <Routes />
             <Footer />
         </>

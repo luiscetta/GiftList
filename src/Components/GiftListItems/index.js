@@ -5,7 +5,7 @@ import { SuccessToast } from '../../utils/toast';
 import Gift from './Gift';
 import GiftConfirmationForm from '../Forms/GiftConfirmationForm';
 import Modal from '../Modal';
-import * as GoogleSheetsService from '../../services/GoogleSheets';
+import * as SheetsService from '../../services/Sheets';
 import './styles.scss';
 
 
@@ -25,7 +25,7 @@ export default function GiftListItems() {
     useEffect(() => {
         async function loadGiftList() {
             if (!giftList.length) {
-                const gifts = await GoogleSheetsService.GetGiftList();
+                const gifts = await SheetsService.GetGiftList();
                 setGiftList(gifts.filter(g => !g.From));
             }
         }
