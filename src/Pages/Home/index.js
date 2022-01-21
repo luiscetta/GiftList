@@ -16,7 +16,7 @@ export default function Home() {
                         Olá, queridos! Esse site é para passarmos as informações sobre horário e <span><a className="link-list" href="/Address">local do Chá de Panela</a></span>.
                     </p>
                     <p className="home-description">
-                        O evento irá acontecer no dia <span>12/03/22.</span>
+                        O evento irá acontecer no dia <span>12/03/22</span>, às <span>16:00hs</span>
                     </p>
 
                     <p className="home-description">
