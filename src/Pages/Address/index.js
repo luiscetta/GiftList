@@ -14,7 +14,7 @@ export default function Address() {
                         <h3 className="section-title">Endereço:</h3>
                         <p className="section-paragraph">Rua Floriano Manoel da Fonseca, Nº 34, Sagrado Coração, Paciência</p>
                         <h3 className="section-title">Ponto de Referência:</h3>
-                        <p className="section-paragraph">Em frente a Escola Municipal Franklin Távora</p>
+                        <p className="section-paragraph">Em frente à Escola Municipal Franklin Távora</p>
                     </div>
                 </div>
             </div>
